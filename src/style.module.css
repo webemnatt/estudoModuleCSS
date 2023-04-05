@@ -1,0 +1,24 @@
+.teste {
+  background-color: lightskyblue;
+}
+
+.pseudo-Element {
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+  border-radius: 25%;
+  text-align: center;
+}
+
+.pseudo-Element::after {
+  position: absolute; /*sem ele o width e height é ignorado*/
+  width: 200px;
+  height: 30px;
+  background-color: lightseagreen;
+  content: 'pseudoElemento';
+  border-radius: 5%;
+  color: aliceblue;
+  margin-left: 60px; /*descola da margem esquerda o obj*/
+  text-align: center; /*centraliza em linha o texto */
+  justify-content: center;
+}
